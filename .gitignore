@@ -1,0 +1,5 @@
+myapp
+*.d
+Makefile
+obj/
+.vscode/
