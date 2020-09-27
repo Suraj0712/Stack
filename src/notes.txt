@@ -1,0 +1,36 @@
+Question we are planning to solve
+1. Nearest greater to left
+2. Nearest greater to right
+3. Nearest smaller to left
+4. Nearest smaller to right
+5. tock span problem
+6. Maximum area of histogram
+7. Max area of rectangle in binary matrix
+8. Rain water problem
+9. Implementing the minstack
+10. Implement stack using 
+11. The celebrity probelm
+12. Longest valid parenthesis
+
+Identification for the stack Question
+1. Generally have array 
+2. Generally the bruteforce algorithm O(n^2) the internal loop is dependent on outside one
+
+outer loop                   |     inner loop
+for(int i=0; i<10; i++)         1. j-> 0 to i | j++
+                                2. j-> i to 0 | j--
+                                3. j-> i to n | j++
+                                4. j-> n to i | j--
+
+Question 1:
+Next greatest to left:
+Given an array, print the Next Greater Element (NGE) for every element. 
+The Next greater Element for an element x is the first greater element 
+on the right side of x in array. Elements for which no greater element 
+exist, consider next greater element as -1.
+
+Approach:
+1. Start from the end of array
+2. Store the last element in the stack 
+3. Now while the top element is smaller than element we want to push remove the top
+4. If stack is empty return -1 else stack.top()
