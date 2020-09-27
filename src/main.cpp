@@ -7,11 +7,17 @@ int main()
 
     Stack solution;
 
-    solution.nearestGreaterToRight(v, answer);
+    // solution.nearestGreaterToRight(v, answer);
+
+    // answer = solution.nearestGreaterToLeft(v);
+    // answer = solution.nearestSmallerToLeft(v);
+    answer = solution.nearestSmallerToRight(v);
 
     for(auto i: answer)
     {
         cout<<i<<" ";
     }
+
+
     return 0;
 }
